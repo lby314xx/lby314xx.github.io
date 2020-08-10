@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Library Data Visualisation Report">
+    <meta name="author" content="Boyuan">
+    <title>Report</title>
+    <!--META-->
+    <style media= "screen and (min-width: 512px) and (max-width: 1024px)"></style>
+    
+    <!--Packages-->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.13.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.14.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.10.0"></script>
+    <script src="https://code.highcharts.com.cn/highcharts/highcharts.js"></script>
+    <script src="https://code.highcharts.com.cn/highcharts/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com.cn/highcharts/modules/oldie.js"></script>
+    <script src="https://code.highcharts.com.cn/highcharts/modules/drilldown.js"></script>
+    <script src="https://code.highcharts.com.cn/highcharts-plugins/highcharts-zh_CN.js"></script>
+    
+    
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+    <!--     <style>
+        .header{
+            height: 45px;
+            background-color: rgba(45, 45, 45, 0.98);
+        }
+        .section{
+            position: relative;
+            padding-top:10px;
+        }
+        .sectionOne{
+            height: 240px;
+            background-color: #dadada;
+            text-align: center;
+            line-height: 240px;
+        }
+        .sectionTwo,.sectionThree,.sectionFour{
+            margin-top: 10px;
+            height: 575px;
+            background-color: #dadada;
+            text-align: center;
+            line-height: 575;
+        }
+        .sectionFive,.sectionSeven,.sectionNine{
+            display: inline-block;
+            margin-top: 10px;
+            height: 580px;
+            width: 49.5%;
+            background-color: #5ec3d7;
+            text-align: center;
+            line-height: 580px;
+            color: white;
+        }
+
+    </style> -->
+</head>
+<body>
+    <div class="section">
+        <table>
+            <tr>
+                <th>TOTAL searches on DiscoverED last year</th>
+                <th>TOTAL average items borrowed each year</th>
+                <th>TOTAL items borrowed last year</th>
+                <th>Number of currentle available e-resources</th>
+                <th>TOTAL Ebooks currently available</th>
+                <th>TOTAL Resource Lists active</th>
+                <th>TOTAL books added to stock last year (physical and electronic)</th>
+                <th>TOTA Link resolver requests last year.</th>
+            </tr>
+            <tr>
+                <td>7345318</td>
+                <td>585192</td>
+                <td>336492</td>
+                <td>1703817</td>
+                <td>694738</td>
+                <td>10335</td>
+                <td>97163</td>
+                <td>4920394</td>
+            </tr>
+        </table>
+
+
+
+
+
+        <div class="sectionOne">
+
+            <div id="vis">
+                <script src= 'main.js'>
+                </script>
+            </div>
+
+            <div id="rank" style="min-width:310px ;height:400px ; margin: 0 auto">
+                <script src='r.js'>
+                </script>
+            </div>
+
+            <div id="echart" style="width: 600px;height:400px;">
+                <script src='ee.js'>
+                </script>
+            </div>
+
+            <a href="https://discovered.ed.ac.uk/permalink/f/1njkql8/44UOE_ALMA21146897330002466"> <img alt = 'Public Law' src = "index.jpg" > </a>
+        </div>
+        <div class=  "sectionTwo" >
+            <div id="line" >
+                <script src= 'k.js'>
+                </script>
+            </div>
+            <fieldset>
+                <p>
+                    The amount of loans <strong>decreases</strong> every year. 
+                </p>
+                <p>
+                    Two peaks are the <u>exam periods</u>.
+                </p>
+            </fieldset>
+        </div>
+
+        <div class=  "sectionThree">
+            <div id="bar" style="min-width:310px ;height:400px ; margin: 0 auto">
+                <script src= 'm.js'>
+                </script>
+            </div>
+        </div>
+        <div class=  "sectionFour">
+            <div id="pie" style="min-width:310px ;height:400px ; margin: 0 auto">
+                <script src= 'p.js'>
+                </script>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
