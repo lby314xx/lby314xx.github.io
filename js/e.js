@@ -4,7 +4,7 @@ var chart = Highcharts.chart('eline', {
         zoomType: 'x'
     },
     title: {
-        text: 'Loans by month, by Academic year'
+        text: 'E-usage by month, by Academic year'
     },
     xAxis: {
         categories: [ 'August', 'September', 'October', 'November', 'December', 'January', 'February', 'March', 'April', 'May', 'June', 'July']
