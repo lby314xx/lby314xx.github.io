@@ -1,6 +1,7 @@
 var chart = Highcharts.chart('line', {
     chart: {
-        type: 'line'
+        type: 'line',
+        zoomType: 'x'
     },
     title: {
         text: 'Loans by month, by Academic year'

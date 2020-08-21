@@ -17,7 +17,10 @@ if (xhr3){
     xhr3.send('username=admin&password=root');
 }
 
+
+
 function onReadyStateChange(){
+
     console.log(xhr3.readyState);
     if (xhr3.readyState ===4){
         if (xhr3.status ===200){

@@ -156,10 +156,13 @@
     responsive: false
   });
 
+
+
+  
 /* 
    Page Loader
    ========================================================================== */
-   $(window).on('load',function() {
+   $(window).load(function() {
       "use strict";
       $('#loader').fadeOut();
     });
